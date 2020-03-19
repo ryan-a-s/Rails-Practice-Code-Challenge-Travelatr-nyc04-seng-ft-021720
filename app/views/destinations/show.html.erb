@@ -1,0 +1,8 @@
+<h1><%= @destination.name + " - " + @destination.country %></h1>
+
+<h3>Related Posts</h3>
+<ul>
+    <% @posts.select do |post| %>
+    <li><%= link_to post.title, post %></li>
+    <% end %>
+</ul>
